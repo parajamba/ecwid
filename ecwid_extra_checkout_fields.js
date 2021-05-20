@@ -4,6 +4,19 @@ ec.order = ec.order || {};
 ec.order.extraFields = ec.order.extraFields || {};
 
 // Add new text field to shipping address section at checkout
+ec.order.extraFields.city = {
+    'title': 'City',
+    'titleTranslated': {
+        'en': 'City',
+        'he': 'עיר',
+        'ru': 'Город'
+    },
+    'type': 'text',
+    'required': true,
+    'checkoutDisplaySection': 'shipping_address'
+};
+
+// Add new text field to shipping address section at checkout
 ec.order.extraFields.street = {
     'title': 'Street',
     'titleTranslated': {
